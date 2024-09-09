@@ -1,0 +1,61 @@
+ /*pai*/
+ .container{
+    background-color:rgb(255, 201, 204);
+    height: 300px;
+     /*define o container flex*/
+    display: flex;
+     /*define se é linha o coluna*/
+     /*reverse inverte o conteiner inteiro*/
+     flex-direction: row;
+    justify-content:center;
+    align-items: center;
+     /*permite que a linha ou coluna quebre e passe para baixo*/
+    flex-wrap: wrap;
+    
+}
+ /*filho*/
+.item{
+    width: 100px;
+    height: 100px;
+     /*abre margem de um item para outro*/
+    margin: 10px;
+    background-color: crimson;
+    color: white;
+    font-size: 35px;
+    /*alinhando numeros*/
+    display: flex;
+     /*alinhar por coluna ao centro (center)/direita(flex-end)/esquerda não é necessário pq é o padrão*/
+    justify-content: center;
+     /*alinhar por linhas ao centro (center)/ baixo (end)/cima (não é necessário pq é o padrão)*/
+    align-items:center;
+}
+
+.item:nth-child(1){
+    /*order previsa de todos enumerados com order para funcionar*/
+    order:5;
+}
+.item:nth-child(2){
+    order: 3;
+    /*define capacidade de redução em relação a outro item*/
+    flex-shrink: 3;
+}
+
+.item:nth-child(3){
+    order:1;
+    /*alinhamento do item*/
+    align-self: flex-end;
+}
+
+.item:nth-child(4){
+    order: 6;
+}
+
+.item:nth-child(5){
+    order: 2;
+    /*define o tamanho que cresce em relação a outro item*/
+    flex-grow: 1;
+}
+
+.item:nth-child(6){
+    order:4;
+}
