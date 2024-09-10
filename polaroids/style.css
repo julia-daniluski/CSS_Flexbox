@@ -19,3 +19,41 @@ header{
     padding: 30px;
     background-color: rgba(230, 201, 201);
 }
+
+main#album{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section.coluna{
+    flex: 1 1 100%;
+    padding: 0px 5px;
+}
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.produtos {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    /*Transformando em conteiner*/
+    display: flex;
+    /*deixa o texto embaixo da imagem*/
+    flex-direction: column;
+}
+
+.produtos img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
